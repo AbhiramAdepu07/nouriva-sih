@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "abhi",
+      "email": "abhiramadepu01@gmail.com",
+      "password_hash": "e357562964f1b8b1006e111fe5e32ff5:325999fcfb1e7005553cb5d5ec99912497feb788ffa66b82120e88e09e803342399547fe14a02c9238f5b0b4afefece9320cc8ce08eaed9e76b80b2e5d74fee8",
+      "created_at": "2026-10-04T12:51:21.454Z"
+    }
+  ],
+  "food_records": [],
+  "rescue_requests": [],
+  "rewards": [
+    {
+      "user_id": 1,
+      "points": 0,
+      "rescued_kg": 0,
+      "streak": 0,
+      "record_awarded": 0,
+      "safety_awarded": 0,
+      "rescue_awarded": 0,
+      "redistribution_awarded": 0,
+      "challenge_reward_given": 0
+    }
+  ],
+  "counters": {
+    "users": 1,
+    "food_records": 0,
+    "rescue_requests": 0
+  }
+}

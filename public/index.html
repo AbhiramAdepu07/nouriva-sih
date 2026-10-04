@@ -1,0 +1,3970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nouriva | From Surplus to Someone's Next Meal</title>
+
+<style>
+
+/* =====================================================
+   ANNASETU PREMIUM DESIGN
+===================================================== */
+
+:root{
+    --green:#08783F;
+    --green2:#16A05A;
+    --dark:#063D27;
+    --gold:#F2B84B;
+    --gold2:#D99A25;
+    --blue:#2878B8;
+    --cream:#F8FBF6;
+    --white:#FFFFFF;
+    --muted:#64736A;
+    --border:#DCE9DF;
+    --shadow:0 12px 35px rgba(6,61,39,.10);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(circle at 10% 10%,rgba(22,160,90,.07),transparent 25%),
+        radial-gradient(circle at 90% 20%,rgba(243,165,43,.07),transparent 22%),
+        #f5f8f4;
+    color:var(--text);
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--border);
+    padding:15px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    font-weight:900;
+    font-size:27px;
+    color:var(--dark);
+}
+
+.logo-mark{
+    width:43px;
+    height:43px;
+    border-radius:14px;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(135deg,var(--green),var(--green2));
+    color:white;
+    box-shadow:0 8px 18px rgba(8,120,63,.2);
+}
+
+.logo-text small{
+    display:block;
+    color:var(--muted);
+    font-size:10px;
+    letter-spacing:.5px;
+    font-weight:600;
+    margin-top:2px;
+}
+
+.help-btn{
+    border:1px solid var(--border);
+    background:white;
+    color:var(--green);
+    padding:10px 17px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:700;
+    transition:.25s;
+}
+
+.help-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:var(--shadow);
+}
+
+/* =====================================================
+   NAV
+===================================================== */
+
+nav{
+    padding:12px 6%;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    position:sticky;
+    top:74px;
+    z-index:900;
+}
+
+nav::-webkit-scrollbar{
+    display:none;
+}
+
+nav button{
+    border:1px solid transparent;
+    background:#edf6ef;
+    color:#176c3c;
+    padding:10px 15px;
+    border-radius:30px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-weight:700;
+    transition:.25s;
+}
+
+nav button:hover{
+    background:#dff0e3;
+    transform:translateY(-2px);
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.container{
+    width:88%;
+    max-width:1200px;
+    margin:32px auto 60px;
+}
+
+.page{
+    display:none;
+    animation:fadeUp .45s ease;
+}
+
+.page.active{
+    display:block;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(12px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:360px;
+    padding:45px;
+    border-radius:30px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(120deg,rgba(3,67,39,.96),rgba(12,135,70,.90)),
+        linear-gradient(135deg,#08783f,#1cac65);
+    box-shadow:0 25px 60px rgba(4,76,42,.18);
+    display:flex;
+    align-items:center;
+}
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.07);
+    right:-70px;
+    top:-100px;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    right:180px;
+    bottom:-100px;
+}
+
+.hero-content{
+    max-width:700px;
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:8px 13px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:30px;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    color:white;
+    font-size:clamp(36px,5vw,62px);
+    line-height:1.03;
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:#b9f2ca;
+}
+
+.hero p{
+    margin-top:18px;
+    line-height:1.7;
+    max-width:650px;
+    color:#e8f8ed;
+}
+
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.primary{
+    background:linear-gradient(135deg,var(--green),var(--green2));
+    color:white;
+    border:none;
+    padding:12px 19px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:800;
+    box-shadow:0 7px 18px rgba(8,120,63,.18);
+    transition:.25s;
+}
+
+.primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 25px rgba(8,120,63,.24);
+}
+
+.hero .primary{
+    background:white;
+    color:var(--green);
+}
+
+.secondary{
+    background:#edf6ef;
+    color:var(--green);
+    border:1px solid #dceadd;
+    padding:12px 19px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:800;
+    transition:.25s;
+}
+
+.secondary:hover{
+    transform:translateY(-2px);
+}
+
+/* =====================================================
+   TITLES
+===================================================== */
+
+h1{
+    color:var(--dark);
+    margin-bottom:8px;
+    font-size:35px;
+    letter-spacing:-1px;
+}
+
+h2{
+    color:var(--dark);
+    margin-bottom:14px;
+}
+
+.subtitle{
+    color:var(--muted);
+    margin-bottom:25px;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.stat{
+    background:rgba(255,255,255,.9);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:22px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.stat:hover{
+    transform:translateY(-5px);
+}
+
+.stat:after{
+    content:"";
+    position:absolute;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#edf8ef;
+    right:-30px;
+    top:-30px;
+}
+
+.stat-icon{
+    font-size:25px;
+    position:relative;
+    z-index:2;
+}
+
+.number{
+    color:var(--green);
+    font-size:30px;
+    font-weight:900;
+    margin:8px 0 3px;
+}
+
+.stat-label{
+    color:var(--muted);
+    font-size:13px;
+    font-weight:600;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card{
+    background:rgba(255,255,255,.92);
+    border:1px solid var(--border);
+    padding:25px;
+    border-radius:22px;
+    margin-bottom:20px;
+    box-shadow:var(--shadow);
+}
+
+/* =====================================================
+   FLOW
+===================================================== */
+
+.flow{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:9px;
+    margin-top:20px;
+}
+
+.flow-item{
+    padding:17px 7px;
+    text-align:center;
+    background:linear-gradient(180deg,#f5fbf6,#edf7ef);
+    border:1px solid #deebdf;
+    border-radius:15px;
+    font-size:12px;
+    transition:.3s;
+}
+
+.flow-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(8,120,63,.08);
+}
+
+.flow-icon{
+    font-size:27px;
+    margin-bottom:8px;
+}
+
+.flow-item strong{
+    color:var(--green);
+}
+
+/* =====================================================
+   IMPACT CARDS
+===================================================== */
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.impact{
+    padding:22px;
+    background:#fbfdfb;
+    border:1px solid var(--border);
+    border-radius:18px;
+    text-align:center;
+}
+
+.impact-icon{
+    font-size:30px;
+}
+
+.impact-number{
+    color:var(--green);
+    font-size:27px;
+    font-weight:900;
+    margin:8px 0;
+}
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+.form-group{
+    margin-bottom:17px;
+}
+
+label{
+    display:block;
+    font-weight:800;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+input,
+select{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d6e0d7;
+    border-radius:12px;
+    outline:none;
+    background:#fbfdfb;
+    transition:.2s;
+}
+
+input:focus,
+select:focus{
+    border-color:var(--green2);
+    box-shadow:0 0 0 4px rgba(22,160,90,.08);
+}
+
+/* =====================================================
+   RESULT
+===================================================== */
+
+.result{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background:#edf8ef;
+    border:1px solid #d7ebda;
+    border-left:5px solid var(--green);
+}
+
+.danger{
+    background:#fff0f0;
+    border-color:#f2d4d4;
+    border-left-color:#d43b3b;
+}
+
+.warning{
+    background:#fff7e9;
+    border-left-color:#e09a22;
+}
+
+/* =====================================================
+   NGO
+===================================================== */
+
+.ngo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.ngo{
+    padding:22px;
+    border-radius:18px;
+    background:linear-gradient(180deg,#ffffff,#f8fbf8);
+    border:1px solid var(--border);
+    transition:.3s;
+}
+
+.ngo:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.ngo h3{
+    color:var(--green);
+    margin-bottom:10px;
+}
+
+.status{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    margin:10px 0;
+    color:#16804a;
+    font-size:13px;
+    font-weight:800;
+}
+
+.status-dot{
+    width:8px;
+    height:8px;
+    background:#22b864;
+    border-radius:50%;
+}
+
+/* =====================================================
+   TRACKING
+===================================================== */
+
+.track-step{
+    padding:18px;
+    border-left:4px solid #d8e0d9;
+    margin-bottom:5px;
+    background:#fbfdfb;
+    border-radius:0 12px 12px 0;
+}
+
+.track-step.done{
+    border-color:var(--green);
+    background:#f0f9f2;
+}
+
+.track-step.done strong{
+    color:var(--green);
+}
+
+/* =====================================================
+   REWARDS
+===================================================== */
+
+.reward-hero{
+    position:relative;
+    overflow:hidden;
+    padding:35px;
+    border-radius:25px;
+    color:white;
+    background:
+        radial-gradient(circle at 90% 20%,rgba(255,255,255,.2),transparent 20%),
+        linear-gradient(135deg,#e79a1f,#f4bd48);
+    box-shadow:0 20px 45px rgba(225,151,29,.2);
+}
+
+.reward-hero h2{
+    color:white;
+}
+
+.reward-hero small{
+    opacity:.85;
+}
+
+.points{
+    font-size:55px;
+    font-weight:900;
+    margin:5px 0;
+}
+
+.reward-level{
+    font-weight:800;
+}
+
+.progress{
+    width:100%;
+    height:14px;
+    background:rgba(255,255,255,.3);
+    border-radius:30px;
+    overflow:hidden;
+    margin-top:18px;
+}
+
+.progress-bar{
+    height:100%;
+    width:0%;
+    background:white;
+    border-radius:30px;
+    transition:1s;
+}
+
+.reward-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.badge{
+    background:white;
+    border:2px solid #e7ece7;
+    border-radius:20px;
+    padding:25px 12px;
+    text-align:center;
+    transition:.3s;
+    position:relative;
+}
+
+.badge:hover{
+    transform:translateY(-6px);
+}
+
+.badge.unlocked{
+    border-color:#f2b63d;
+    background:linear-gradient(180deg,#fffdf5,#fff8df);
+    box-shadow:0 12px 25px rgba(238,172,48,.15);
+}
+
+.badge-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.badge h3{
+    color:var(--green);
+    margin-bottom:6px;
+}
+
+.lock{
+    color:#999;
+    font-size:12px;
+}
+
+/* =====================================================
+   CHALLENGE
+===================================================== */
+
+.challenge{
+    padding:22px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#f4fbf5,#fffaf0);
+    border:1px solid var(--border);
+}
+
+.challenge-progress{
+    height:14px;
+    background:#e3eae4;
+    border-radius:30px;
+    overflow:hidden;
+    margin:16px 0;
+}
+
+.challenge-bar{
+    height:100%;
+    width:0;
+    background:linear-gradient(90deg,var(--green),#49c77b);
+    transition:1s;
+}
+
+/* =====================================================
+   CARBON
+===================================================== */
+
+.carbon{
+    padding:35px;
+    border-radius:25px;
+    color:white;
+    background:
+        radial-gradient(circle at 90% 10%,rgba(87,211,133,.2),transparent 20%),
+        linear-gradient(135deg,#063d27,#0a7540);
+    box-shadow:0 20px 45px rgba(3,67,39,.18);
+}
+
+.carbon h2{
+    color:white;
+}
+
+.carbon input{
+    margin:18px 0;
+    background:white;
+}
+
+.carbon-result{
+    margin-top:20px;
+    padding:23px;
+    border-radius:17px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.big{
+    font-size:40px;
+    font-weight:900;
+    margin:8px 0;
+}
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+#toast{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#063d27;
+    color:white;
+    padding:15px 20px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    transform:translateY(100px);
+    opacity:0;
+    pointer-events:none;
+    transition:.4s;
+    z-index:2000;
+}
+
+#toast.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    text-align:center;
+    padding:45px 20px;
+    background:#063d27;
+    color:#cfe8d8;
+}
+
+footer .footer-logo{
+    font-size:25px;
+    font-weight:900;
+    color:white;
+    margin-bottom:8px;
+}
+
+footer p{
+    margin-top:7px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1000px){
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .flow{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .impact-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .reward-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    header{
+        padding:13px 4%;
+    }
+
+    nav{
+        top:69px;
+        padding:10px 4%;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .hero{
+        padding:30px 23px;
+        min-height:auto;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .stats,
+    .impact-grid,
+    .ngo-grid{
+        grid-template-columns:1fr;
+    }
+
+    .flow{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .reward-grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+}
+
+/* =====================================================
+   CHECKBOX
+===================================================== */
+
+input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+    accent-color:var(--green);
+}
+
+
+/* ================= NOURIVA ENTRY GATE ================= */
+#entryGate{position:fixed;inset:0;z-index:5000;background:radial-gradient(circle at 15% 15%,rgba(22,160,90,.20),transparent 28%),radial-gradient(circle at 85% 85%,rgba(243,165,43,.14),transparent 25%),linear-gradient(135deg,#063d27,#0a7540 55%,#16a05a);display:flex;align-items:center;justify-content:center;padding:24px;overflow:auto}
+#entryGate.hidden{display:none}
+.entry-shell{width:min(920px,100%);display:grid;grid-template-columns:1.05fr .95fr;background:rgba(255,255,255,.97);border-radius:32px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.entry-brand{padding:48px;color:white;background:linear-gradient(145deg,#063d27,#08783f 65%,#16a05a);position:relative}
+.entry-logo{font-size:38px;font-weight:900}.entry-kicker{margin-top:12px;letter-spacing:1.5px;font-size:12px;font-weight:800;opacity:.82}
+.entry-title{font-size:36px;line-height:1.08;margin-top:30px}.entry-subtitle{margin-top:14px;line-height:1.7;opacity:.9}
+.challenge-box{margin-top:30px;padding:22px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.10);border-radius:20px}
+.entry-progress{height:10px;background:rgba(255,255,255,.2);border-radius:20px;overflow:hidden;margin:15px 0 8px}.entry-progress span{display:block;height:100%;width:0;background:#fff;border-radius:20px}
+.entry-panel{padding:42px}.entry-panel h2{color:var(--dark);font-size:28px}.entry-panel .mini{color:var(--muted);font-size:13px;margin-top:6px}
+.entry-form{margin-top:24px}.entry-form label{display:block;font-weight:800;margin:14px 0 7px}.entry-form input{width:100%;padding:13px 14px;border:1px solid var(--border);border-radius:12px;outline:none}
+.entry-form input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(8,120,63,.08)}
+.entry-btn{width:100%;margin-top:18px;border:0;padding:14px;border-radius:13px;background:linear-gradient(135deg,var(--green),var(--green2));color:white;font-weight:900;cursor:pointer}
+.entry-switch{margin-top:16px;text-align:center;color:var(--muted);font-size:13px}.entry-switch button{border:0;background:none;color:var(--green);font-weight:900;cursor:pointer}
+.entry-error{margin-top:12px;color:#c53030;font-size:13px;font-weight:700;min-height:18px}
+#loginNameWrap{display:none}.user-chip{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:var(--green)}
+.logout-btn{border:1px solid var(--border);background:white;color:#b13b3b;padding:9px 13px;border-radius:20px;font-weight:800;cursor:pointer}
+
+/* ================= KITCHEN/DONOR WIZARD ================= */
+.wizard-steps{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.wizard-step{padding:8px 12px;border-radius:20px;background:#edf6ef;color:#6d7b73;font-size:12px;font-weight:900}.wizard-step.active{background:#d9f1df;color:var(--green)}
+.form-step{display:none}.form-step.active{display:block;animation:fadeUp .3s ease}.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field-help{font-size:11px;color:var(--muted);margin-top:5px}.photo-preview{margin-top:12px;display:none}.photo-preview img{width:150px;height:110px;object-fit:cover;border-radius:14px;border:1px solid var(--border)}
+.inline-status{margin-top:12px;padding:12px 14px;border-radius:12px;background:#f0f9f2;color:var(--green);font-weight:800;font-size:13px}
+.detail-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.detail-pill{background:#f6faf6;border:1px solid var(--border);border-radius:14px;padding:12px}.detail-pill small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.5px}.detail-pill strong{display:block;margin-top:4px;color:var(--dark)}
+
+/* ================= IMPACT DASHBOARD ================= */
+.dashboard-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}.dashboard-tile{padding:20px;border-radius:20px;background:#fff;border:1px solid var(--border);box-shadow:var(--shadow)}
+.dashboard-tile .tile-icon{font-size:28px}.dashboard-tile .tile-number{font-size:27px;font-weight:900;color:var(--dark);margin-top:7px}.dashboard-tile .tile-label{font-size:12px;color:var(--muted);font-weight:800;margin-top:3px}
+.impact-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.impact-mini{padding:18px;border-radius:18px;background:linear-gradient(135deg,#f4fbf5,#fffaf0);border:1px solid var(--border)}.impact-mini strong{font-size:25px;color:var(--green);display:block;margin-top:5px}
+@media(max-width:850px){.entry-shell{grid-template-columns:1fr}.entry-brand{padding:32px}.entry-panel{padding:30px}.form-grid-2,.detail-summary,.dashboard-strip,.impact-mini-grid{grid-template-columns:1fr}}
+
+
+/* =========================================================
+   NOURIVA ECO-PREMIUM THEME
+   "From Surplus to Someone's Next Meal" 🌱
+========================================================= */
+body{
+    background:
+      radial-gradient(circle at 8% 5%,rgba(22,160,90,.06),transparent 24%),
+      radial-gradient(circle at 92% 90%,rgba(242,184,75,.08),transparent 22%),
+      var(--cream);
+    color:var(--dark);
+}
+header,.navbar,.topbar{
+    background:rgba(255,255,255,.94)!important;
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border)!important;
+}
+.logo,.brand,.nav-brand{
+    color:var(--green)!important;
+}
+.logo span,.brand span{
+    color:var(--gold)!important;
+}
+button.primary,.primary{
+    background:linear-gradient(135deg,var(--green),var(--green2))!important;
+    box-shadow:0 8px 18px rgba(8,120,63,.18);
+}
+button.primary:hover,.primary:hover{
+    transform:translateY(-1px);
+    box-shadow:0 12px 24px rgba(8,120,63,.23);
+}
+button.secondary,.secondary{
+    background:#fff!important;
+    color:var(--green)!important;
+    border:1px solid var(--border)!important;
+}
+.card,.impact,.result,.dashboard-tile{
+    border:1px solid var(--border)!important;
+    box-shadow:var(--shadow)!important;
+    background:rgba(255,255,255,.94)!important;
+}
+h1,h2,h3{
+    color:var(--dark);
+}
+.subtitle{
+    color:var(--muted);
+}
+
+/* Challenge = GOLD */
+.challenge-box{
+    border:1px solid rgba(242,184,75,.42)!important;
+    background:linear-gradient(135deg,rgba(242,184,75,.18),rgba(255,255,255,.08))!important;
+}
+.challenge-box h3,
+#challengeStep h2{
+    color:var(--gold2);
+}
+.entry-progress span{
+    background:linear-gradient(90deg,var(--gold),#FFE08A)!important;
+}
+#wiz1.active,#wiz2.active,#wiz3.active{
+    box-shadow:0 0 0 2px rgba(22,160,90,.06);
+}
+
+/* Food Rescue = GREEN */
+.impact-icon{
+    color:var(--green);
+}
+#impactFood,#impactMeals,#impactWaste{
+    color:var(--green)!important;
+}
+
+/* Safety = BLUE / TRUST */
+.safety-card,.safety-status,.safety-check{
+    border-color:rgba(40,120,184,.22)!important;
+}
+.safety-card h2,.safety-card h3{
+    color:var(--blue)!important;
+}
+
+/* NGO Connection = GREEN */
+.ngo-card,.ngo-item{
+    border-color:rgba(22,160,90,.20)!important;
+}
+.ngo-card h3,.ngo-item h3{
+    color:var(--green)!important;
+}
+
+/* Impact = GREEN + GOLD */
+.dashboard-strip .dashboard-tile:nth-child(1){
+    border-top:4px solid var(--green)!important;
+}
+.dashboard-strip .dashboard-tile:nth-child(2){
+    border-top:4px solid var(--green2)!important;
+}
+.dashboard-strip .dashboard-tile:nth-child(3){
+    border-top:4px solid var(--green)!important;
+}
+.dashboard-strip .dashboard-tile:nth-child(4){
+    border-top:4px solid var(--gold)!important;
+}
+.dashboard-tile .tile-number{
+    color:var(--green)!important;
+}
+.dashboard-strip .dashboard-tile:nth-child(4) .tile-number{
+    color:var(--gold2)!important;
+}
+
+/* NourivaPoints / rewards = GOLD */
+.reward,.reward-card,.points,.badge-card{
+    border-color:rgba(242,184,75,.35)!important;
+}
+.points,.reward-points{
+    color:var(--gold2)!important;
+}
+
+/* Form focus = Nouriva green */
+input:focus,select:focus,textarea:focus{
+    border-color:var(--green)!important;
+    box-shadow:0 0 0 3px rgba(8,120,63,.08)!important;
+}
+
+/* Small eco accent */
+.section-title::before{
+    background:linear-gradient(180deg,var(--green),var(--gold))!important;
+}
+
+
+/* Nouriva interactive SIH demo lab */
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.feature-card{background:#fff;border:1px solid var(--border);border-radius:22px;padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.feature-card h2{font-size:21px;color:var(--dark);margin-bottom:4px}
+.feature-card label{font-size:13px;font-weight:700;color:var(--dark);margin-top:4px}
+.feature-card input,.feature-card select{width:100%;padding:12px;border:1px solid var(--border);border-radius:11px;background:#fbfdfb;color:var(--dark)}
+.feature-card .primary{padding:12px 16px;border:0;border-radius:12px;color:#fff;cursor:pointer;font-weight:800;margin-top:6px}
+.feature-result{background:#f1f8f2;border:1px solid #d8eadb;border-radius:14px;padding:15px;margin-top:5px;line-height:1.6;color:var(--dark)}
+.safety-feature .feature-result{background:#f0f7fc;border-color:#d5e8f6}
+.impact-feature{grid-column:1/-1;border-top:4px solid var(--gold)}
+.rescue-steps{display:grid;gap:8px}
+.rescue-steps button{padding:12px;text-align:left;border:1px solid var(--border);background:#f8fbf6;border-radius:10px;cursor:pointer;color:var(--dark);font-weight:700}
+.rescue-steps button.done{background:#e2f5e8;border-color:#16a05a;color:#08783f}
+.sim-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:10px}
+.sim-metrics div{background:#fff8e7;border:1px solid #f2dfaa;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.sim-metrics strong{font-size:25px;color:#9a6b08}.sim-metrics span{font-size:12px;color:var(--muted)}
+@media(max-width:760px){.feature-grid{grid-template-columns:1fr}.impact-feature{grid-column:auto}.sim-metrics{grid-template-columns:1fr}}
+
+</style>
+</head>
+
+
+<body>
+<!-- NOURIVA: CHALLENGE + LOGIN BEFORE WEBSITE -->
+<div id="entryGate">
+  <div class="entry-shell">
+    <div class="entry-brand">
+      <div class="entry-logo">🌱 Nouriva</div>
+      <div class="entry-kicker">SMART FOOD RESCUE ECOSYSTEM</div>
+      <div class="entry-title">Take the Challenge.<br>Rescue Food.<br>Create Impact.</div>
+      <p class="entry-subtitle">Start with one simple goal: identify surplus food, keep it safe and help move it to people who can use it.</p>
+<div id="entryThemeLegend" style="margin-top:22px;display:flex;flex-wrap:wrap;gap:7px;font-size:11px;font-weight:800">
+  <span style="padding:7px 9px;border-radius:999px;background:rgba(242,184,75,.18);color:#8A641B">🏆 Challenge</span>
+  <span style="padding:7px 9px;border-radius:999px;background:rgba(22,160,90,.12);color:#08783F">🟢 Food Rescue</span>
+  <span style="padding:7px 9px;border-radius:999px;background:rgba(40,120,184,.12);color:#2878B8">🔵 Safety</span>
+  <span style="padding:7px 9px;border-radius:999px;background:rgba(22,160,90,.12);color:#08783F">🤝 NGO</span>
+  <span style="padding:7px 9px;border-radius:999px;background:rgba(242,184,75,.12);color:#8A641B">🌍 Impact</span>
+</div>
+
+      <div class="challenge-box">
+        <h3>🎯 Today's Challenge</h3>
+        <p>Rescue <strong>20 kg</strong> of surplus food</p>
+        <div class="entry-progress"><span id="entryChallengeBar"></span></div>
+        <small id="entryChallengeText">0 / 20 kg rescued</small>
+      </div>
+    </div>
+    <div class="entry-panel">
+      <div id="challengeStep">
+        <h2>Welcome to Nouriva</h2>
+        <p class="mini">Complete the challenge step to enter your food-rescue workspace.</p>
+        <div class="card" style="margin-top:24px;background:#f7fbf7">
+          <h3>🌍 Why this challenge?</h3>
+          <p style="margin-top:8px">Every rescued kilogram can become a useful meal instead of avoidable waste.</p>
+          <button class="entry-btn" onclick="acceptNourivaChallenge()">🚀 Accept Challenge & Continue</button>
+        </div>
+      </div>
+      <div id="loginStep" style="display:none">
+        <h2 id="authTitle">Create your Nouriva account</h2>
+        <p class="mini" id="authSubtitle">Save your kitchen details, rescue activity and impact on this device.</p>
+        <form class="entry-form" onsubmit="handleAuth(event)">
+          <div id="loginNameWrap">
+            <label for="loginName">Full Name</label>
+            <input id="loginName" type="text" placeholder="Enter your name">
+          </div>
+          <label for="loginEmail">Email or Mobile</label>
+          <input id="loginEmail" type="text" placeholder="name@example.com or mobile number" required>
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="Enter password" required minlength="4">
+          <button class="entry-btn" id="authSubmit" type="submit">Create Account & Enter Nouriva</button>
+          <div class="entry-error" id="authError"></div>
+        </form>
+        <div class="entry-switch"><span id="switchText">Already have an account?</span> <button type="button" onclick="toggleAuthMode()" id="switchButton">Login</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="logo">
+
+<div class="logo-mark">
+🌱
+</div>
+
+<div class="logo-text">
+
+Nouriva
+
+<small>
+SMART FOOD RESCUE ECOSYSTEM
+</small>
+
+</div>
+
+</div>
+
+<div style="display:flex;align-items:center;gap:10px">
+<div class="user-chip">👤 <span id="currentUserName">Guest</span></div>
+<button class="logout-btn" onclick="logoutNouriva()">Logout</button>
+<button class="help-btn" onclick="showMessage('Nouriva connects surplus food with people and communities while rewarding positive impact.')">❔ Help</button>
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+<button onclick="openPage('dashboard')">
+🏠 Home
+</button>
+
+<button onclick="openPage('record')">
+🍱 Record
+</button>
+
+<button onclick="openPage('ai')">
+🤖 Forecast
+</button>
+
+<button onclick="openPage('safety')">
+🛡️ Safety
+</button>
+
+<button onclick="openPage('redistribute')">
+🤝 Connect
+</button>
+
+<button onclick="openPage('tracking')">
+🚚 Track
+</button>
+
+<button onclick="openPage('impact')">
+🌱 Impact
+</button>
+
+<button onclick="openPage('rewards')">
+🏆 Rewards
+</button>
+
+<button onclick="openPage('carbon')">
+🌍 Carbon
+</button>
+
+<button onclick="openPage('winning')">
+✨ Demo Lab
+</button>
+
+
+
+</nav>
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="dashboard" class="page active">
+
+
+<div class="hero">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+🌱 SOCIAL IMPACT • FOOD RESCUE • REWARDS
+</div>
+
+<h1>
+From <span>Surplus Food</span><br>
+to Someone's Next Meal.
+</h1>
+
+<p>
+
+Nouriva helps institutional kitchens reduce food waste,
+identify suitable surplus food, connect with redistribution
+partners and measure real-world impact.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<button
+class="primary"
+onclick="openPage('record')">
+
+🍱 Start Food Rescue
+
+</button>
+
+
+<button
+class="secondary"
+onclick="openPage('rewards')">
+
+🏆 My Rewards
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+
+<div class="stat">
+
+<div class="stat-icon">🍱</div>
+
+<div
+class="number"
+id="dashPrepared">
+
+0 kg
+
+</div>
+
+<div class="stat-label">
+Food Prepared
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">♻️</div>
+
+<div
+class="number"
+id="dashSurplus">
+
+0 kg
+
+</div>
+
+<div class="stat-label">
+Food Rescued
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">❤️</div>
+
+<div
+class="number"
+id="homeMeals">
+
+0
+
+</div>
+
+<div class="stat-label">
+Estimated Meals
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">⭐</div>
+
+<div
+class="number"
+id="dashPoints">
+
+0
+
+</div>
+
+<div class="stat-label">
+NourivaPoints
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card" style="margin-top:20px">
+<h2>🏪 Kitchen Profile</h2>
+<div class="detail-summary">
+  <div class="detail-pill"><small>Kitchen</small><strong id="homeKitchen">Not added</strong></div>
+  <div class="detail-pill"><small>Type</small><strong id="homeKitchenType">Not added</strong></div>
+  <div class="detail-pill"><small>City</small><strong id="homeCity">Not added</strong></div>
+</div>
+</div>
+
+<!-- JOURNEY -->
+
+<div class="card">
+
+<h2>
+The Nouriva Journey
+</h2>
+
+<p class="subtitle">
+One simple flow from extra food to meaningful impact.
+</p>
+
+
+<div class="flow">
+
+
+<div class="flow-item">
+<div class="flow-icon">🍚</div>
+<strong>Record</strong>
+<br>Food
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">🤖</div>
+<strong>Predict</strong>
+<br>Demand
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">🛡️</div>
+<strong>Check</strong>
+<br>Safety
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">🤝</div>
+<strong>Connect</strong>
+<br>Partner
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">🚚</div>
+<strong>Rescue</strong>
+<br>Food
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">❤️</div>
+<strong>Serve</strong>
+<br>People
+</div>
+
+
+<div class="flow-item">
+<div class="flow-icon">🏆</div>
+<strong>Reward</strong>
+<br>Impact
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- IMPACT -->
+
+<div class="card">
+
+<h2>
+🌍 Your Impact
+</h2>
+
+<div class="impact-grid">
+
+
+<div class="impact">
+
+<div class="impact-icon">
+🍚
+</div>
+
+<div
+class="impact-number"
+id="homeRescued">
+
+0 kg
+
+</div>
+
+Food Rescued
+
+</div>
+
+
+<div class="impact">
+
+<div class="impact-icon">
+❤️
+</div>
+
+<div
+class="impact-number"
+id="homeMeals2">
+
+0
+
+</div>
+
+Meals Supported
+
+</div>
+
+
+<div class="impact">
+
+<div class="impact-icon">
+🌱
+</div>
+
+<div
+class="impact-number"
+id="homeCO2">
+
+0 kg
+
+</div>
+
+Estimated CO₂e
+
+</div>
+
+
+<div class="impact">
+
+<div class="impact-icon">
+🏅
+</div>
+
+<div
+class="impact-number"
+id="homeBadge">
+
+Food Saver
+
+</div>
+
+Current Badge
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div id="dashboardMessage"></div>
+
+
+</section>
+
+
+<!-- =====================================================
+     RECORD
+===================================================== -->
+<section id="record" class="page">
+<h1>Record Surplus Food 🍱</h1>
+<p class="subtitle">Capture kitchen, donor and food details before starting the rescue flow.</p>
+
+<div class="card">
+<div class="wizard-steps">
+  <div class="wizard-step active" id="wiz1">1. Kitchen Details</div>
+  <div class="wizard-step" id="wiz2">2. Donor Details</div>
+  <div class="wizard-step" id="wiz3">3. Food Quantities</div>
+</div>
+
+<div class="form-step active" id="recordStep1">
+  <h2>🏪 Kitchen / Restaurant Details</h2>
+  <p class="field-help">Tell Nouriva where the surplus food is coming from.</p>
+  <div class="form-grid-2" style="margin-top:18px">
+    <div class="form-group"><label>Kitchen / Restaurant Name</label><input id="kitchenName" type="text" placeholder="Example: TKR College Hostel Kitchen"></div>
+    <div class="form-group"><label>Kitchen Type</label><select id="kitchenType">
+      <option value="">Select type</option><option>College / Hostel</option><option>School</option><option>Hotel</option><option>Wedding Hall</option><option>Food Processing Unit</option><option>Restaurant</option><option>Other Institutional Kitchen</option>
+    </select></div>
+  </div>
+  <div class="form-group"><label>Pickup Details</label><input id="pickupDetails" type="text" placeholder="Example: Gate 2, 6:30 PM pickup"></div>
+  <div class="form-grid-2">
+    <div class="form-group"><label>City</label><select id="city"><option value="">Select city</option><option>Hyderabad</option><option>Bengaluru</option><option>Chennai</option><option>Vijayawada</option><option>Warangal</option><option>Other</option></select></div>
+    <div class="form-group"><label>Contact No.</label><input id="contactNo" type="tel" placeholder="Enter contact number"></div>
+  </div>
+  <button class="primary" onclick="continueToDonor()">Continue to Donor Details →</button>
+</div>
+
+<div class="form-step" id="recordStep2">
+  <h2>🤲 Donor / Food Details</h2>
+  <p class="field-help">Add the information a redistribution partner needs to understand the food.</p>
+  <div class="form-grid-2" style="margin-top:18px">
+    <div class="form-group"><label>How Much Portion Is Available? (kg)</label><input id="donorPortion" type="number" min="0" step=".1" placeholder="Example: 30"></div>
+    <div class="form-group"><label>Food Type</label><select id="foodType">
+      <option value="">Select food type</option><option>Cooked Rice</option><option>Dal / Curry</option><option>Vegetables</option><option>Roti / Bread</option><option>Meals / Combo</option><option>Snacks</option><option>Other</option>
+    </select></div>
+  </div>
+  <div class="form-grid-2">
+    <div class="form-group"><label>Prepared At</label><input id="preparedAt" type="datetime-local"></div>
+    <div class="form-group"><label>Expiry / Safe-Use Until</label><input id="expiryDate" type="date" onchange="calculateFreshness()"></div>
+  </div>
+  <div class="form-group"><label>Storage Details</label><input id="storageDetails" type="text" placeholder="Example: Refrigerated / covered container"></div>
+  <div class="form-grid-2">
+    <div class="form-group"><label>Freshness Risk</label><select id="freshnessRisk"><option value="">Select risk</option><option>Low</option><option>Medium</option><option>High</option></select></div>
+    <div class="form-group"><label>Food Photo</label><input id="foodPhoto" type="file" accept="image/*" onchange="previewDonorPhoto(event)"><div class="field-help">Demo only: the selected photo stays on this device.</div></div>
+  </div>
+  <div class="photo-preview" id="photoPreview"><img id="photoPreviewImg" alt="Food preview"></div>
+  <div class="inline-status" id="freshnessStatus">Freshness status will appear after an expiry date is selected.</div>
+  <div class="entry-actions"><button class="secondary" onclick="goRecordStep(1)">← Back</button><button class="primary" onclick="continueToFoodQuantities()">Continue to Food Quantities →</button></div>
+</div>
+
+<div class="form-step" id="recordStep3">
+  <h2>🍱 Food Quantity Details</h2>
+  <p class="field-help">These values help Nouriva estimate surplus and tomorrow's preparation requirement.</p>
+  <div class="form-grid-2" style="margin-top:18px">
+    <div class="form-group"><label>Food Name</label><input id="foodName" type="text" placeholder="Example: Rice and Dal"></div>
+    <div class="form-group"><label>Expected People Today</label><input id="expectedPeople" type="number" min="0" placeholder="Example: 500"></div>
+    <div class="form-group"><label>Quantity Prepared (kg)</label><input id="prepared" type="number" min="0" step=".1" placeholder="Example: 150"></div>
+    <div class="form-group"><label>Quantity Consumed (kg)</label><input id="consumed" type="number" min="0" step=".1" placeholder="Example: 120"></div>
+    <div class="form-group"><label>Quantity Remaining / Surplus (kg)</label><input id="remaining" type="number" min="0" step=".1" placeholder="Example: 30"></div>
+    <div class="form-group"><label>Preparation Time</label><input id="prepTime" type="time"></div>
+    <div class="form-group"><label>Storage Method</label><select id="storage"><option value="">Select storage method</option><option>Refrigerated</option><option>Hot holding</option><option>Insulated container</option><option>Other</option></select></div>
+  </div>
+  <div class="detail-summary">
+    <div class="detail-pill"><small>Kitchen</small><strong id="summaryKitchen">—</strong></div>
+    <div class="detail-pill"><small>Food Type</small><strong id="summaryFoodType">—</strong></div>
+    <div class="detail-pill"><small>Freshness Risk</small><strong id="summaryRisk">—</strong></div>
+  </div>
+  <div class="entry-actions"><button class="secondary" onclick="goRecordStep(2)">← Back</button><button class="primary" onclick="saveFoodData()">💾 Save Food Data</button></div>
+  <div id="recordResult"></div>
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+     AI
+===================================================== -->
+
+<section id="ai" class="page">
+
+<h1>Smart Food Forecast 🤖</h1>
+
+<p class="subtitle">
+Reduce over-preparation by estimating tomorrow's food requirement.
+</p>
+
+
+<div class="card">
+
+<h2>
+Tomorrow's Demand
+</h2>
+
+
+<div class="form-group">
+
+<label>
+Expected People Tomorrow
+</label>
+
+<input
+id="tomorrowPeople"
+type="number"
+min="1"
+placeholder="Example: 500">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Average Food Requirement Per Person (kg)
+</label>
+
+<input
+id="foodPerPerson"
+type="number"
+min="0"
+step=".01"
+placeholder="Example: 0.25">
+
+</div>
+
+
+<button
+class="primary"
+onclick="runPrediction()">
+
+🤖 Generate Recommendation
+
+</button>
+
+
+<div id="predictionResult"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+📊 Previous Kitchen Data
+</h2>
+
+<div id="previousData">
+
+<div class="empty">
+No food data entered yet.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SAFETY
+===================================================== -->
+
+<section id="safety" class="page">
+
+<h1>Food Safety Shield 🛡️</h1>
+
+<p class="subtitle">
+Complete the screening before surplus food is redistributed.
+</p>
+
+
+<div class="card">
+
+<h2 id="safetyFood">
+No food selected
+</h2>
+
+<p id="safetyQuantity">
+Surplus: 0 kg
+</p>
+
+<br>
+
+
+<label>
+<input type="checkbox" id="safe1">
+Food was prepared hygienically
+</label>
+
+<br><br>
+
+
+<label>
+<input type="checkbox" id="safe2">
+Food was stored appropriately
+</label>
+
+<br><br>
+
+
+<label>
+<input type="checkbox" id="safe3">
+Applicable safe holding/storage time has not been exceeded
+</label>
+
+<br><br>
+
+
+<label>
+<input type="checkbox" id="safe4">
+Responsible staff member has checked the food
+</label>
+
+<br><br>
+
+
+<button
+class="primary"
+onclick="checkSafety()">
+
+🛡️ Complete Safety Check
+
+</button>
+
+
+<div id="safetyResult"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Important Safety Rule
+</h2>
+
+<p>
+
+Nouriva is a prototype screening and record-keeping workflow.
+Final food-safety decisions must follow applicable requirements
+and responsible human verification.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONNECT
+===================================================== -->
+
+<section id="redistribute" class="page">
+
+<h1>Nouriva Connect 🤝</h1>
+
+<p class="subtitle">
+Find a redistribution partner for suitable surplus food.
+</p>
+
+
+<div class="card">
+
+<h2 id="redistributeFood">
+No surplus food available
+</h2>
+
+<p id="redistributeQuantity">
+Quantity: 0 kg
+</p>
+
+<br>
+
+
+<div class="ngo-grid">
+
+
+<div class="ngo">
+
+<h3>
+Helping Hands NGO
+</h3>
+
+<p>📍 Nearby</p>
+
+<p>
+Capacity: 50 kg
+</p>
+
+<div class="status">
+<span class="status-dot"></span>
+Accepting Food
+</div>
+
+<br>
+
+<button
+class="primary"
+onclick="sendRequest('Helping Hands NGO')">
+
+🤝 Send Food
+
+</button>
+
+</div>
+
+
+<div class="ngo">
+
+<h3>
+Food For All
+</h3>
+
+<p>📍 Nearby</p>
+
+<p>
+Capacity: 80 kg
+</p>
+
+<div class="status">
+<span class="status-dot"></span>
+Accepting Food
+</div>
+
+<br>
+
+<button
+class="primary"
+onclick="sendRequest('Food For All')">
+
+🤝 Send Food
+
+</button>
+
+</div>
+
+
+<div class="ngo">
+
+<h3>
+Care & Share
+</h3>
+
+<p>📍 Nearby</p>
+
+<p>
+Capacity: 30 kg
+</p>
+
+<div class="status">
+<span class="status-dot"></span>
+Accepting Food
+</div>
+
+<br>
+
+<button
+class="primary"
+onclick="sendRequest('Care & Share')">
+
+🤝 Send Food
+
+</button>
+
+</div>
+
+
+</div>
+
+
+<div id="ngoResult"></div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TRACK
+===================================================== -->
+
+<section id="tracking" class="page">
+
+<h1>Rescue Tracking 🚚</h1>
+
+<p class="subtitle">
+Follow your food from kitchen to community.
+</p>
+
+
+<div class="card">
+
+<h2 id="trackFood">
+No rescue request yet
+</h2>
+
+<p id="trackNgo">
+NGO: Not selected
+</p>
+
+<br>
+
+
+<div class="track-step done">
+
+<strong>
+✅ Food Recorded
+</strong>
+
+<p>
+Food details entered into Nouriva.
+</p>
+
+</div>
+
+
+<div
+class="track-step"
+id="stepSafety">
+
+<strong>
+⚪ Safety Checked
+</strong>
+
+<p>
+Waiting for safety screening.
+</p>
+
+</div>
+
+
+<div
+class="track-step"
+id="stepRequest">
+
+<strong>
+⚪ NGO Request
+</strong>
+
+<p>
+Waiting for redistribution request.
+</p>
+
+</div>
+
+
+<div
+class="track-step"
+id="stepAccepted">
+
+<strong>
+⚪ NGO Accepted
+</strong>
+
+<p>
+Waiting for NGO confirmation.
+</p>
+
+</div>
+
+
+<div
+class="track-step"
+id="stepPickup">
+
+<strong>
+⚪ Pickup
+</strong>
+
+<p>
+Waiting for collection.
+</p>
+
+</div>
+
+
+<div
+class="track-step"
+id="stepDelivered">
+
+<strong>
+⚪ Delivered
+</strong>
+
+<p>
+Waiting for delivery.
+</p>
+
+</div>
+
+
+<br>
+
+<button
+class="primary"
+onclick="updateTracking()">
+
+🚚 Update Next Status
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     IMPACT
+===================================================== -->
+<section id="impact" class="page">
+<h1>Impact Dashboard 🌱</h1>
+<p class="subtitle">See the food, people and community impact created through Nouriva.</p>
+
+<div class="dashboard-strip">
+  <div class="dashboard-tile"><div class="tile-icon">🍱</div><div class="tile-number" id="impactPortions">0</div><div class="tile-label">Portions / Meals</div></div>
+  <div class="dashboard-tile"><div class="tile-icon">❤️</div><div class="tile-number" id="impactPeople">0</div><div class="tile-label">People Supported</div></div>
+  <div class="dashboard-tile"><div class="tile-icon">🤝</div><div class="tile-number" id="impactNGOs">0</div><div class="tile-label">NGO Partner</div></div>
+  <div class="dashboard-tile"><div class="tile-icon">🌍</div><div class="tile-number" id="impactCarbonTop">0 kg</div><div class="tile-label">Estimated CO₂e</div></div>
+</div>
+
+<div class="impact-grid" style="margin-top:20px">
+<div class="impact"><div class="impact-icon">🍚</div><div class="impact-number" id="impactFood">0 kg</div>Food Rescued</div>
+<div class="impact"><div class="impact-icon">❤️</div><div class="impact-number" id="impactMeals">0</div>Estimated Meals</div>
+<div class="impact"><div class="impact-icon">♻️</div><div class="impact-number" id="impactWaste">0 kg</div>Waste Prevented</div>
+<div class="impact"><div class="impact-icon">🌍</div><div class="impact-number" id="impactCarbon">0 kg</div>Estimated CO₂e</div>
+</div>
+
+<div class="card" style="margin-top:20px">
+<h2>📊 Rescue Snapshot</h2>
+<div class="impact-mini-grid">
+  <div class="impact-mini">Kitchen / Donor<strong id="impactKitchen">Not added</strong></div>
+  <div class="impact-mini">Food Type<strong id="impactFoodType">Not added</strong></div>
+  <div class="impact-mini">Freshness Risk<strong id="impactRisk">Not checked</strong></div>
+</div>
+</div>
+
+<div class="card" style="margin-top:20px">
+<h2>❤️ Your Nouriva Story</h2>
+<p id="impactStory">Record surplus food to start building your impact story.</p>
+</div>
+</section>
+
+<!-- =====================================================
+     REWARDS
+===================================================== -->
+
+<section id="rewards" class="page">
+
+<h1>Rewards Center 🏆</h1>
+
+<p class="subtitle">
+Your positive actions earn recognition through NourivaPoints.
+</p>
+
+
+<div class="reward-hero">
+
+<h2>
+⭐ NourivaPoints
+</h2>
+
+<div
+class="points"
+id="rewardPoints">
+
+0
+
+</div>
+
+<div
+class="reward-level"
+id="rewardLevel">
+
+Food Saver 🍚
+
+</div>
+
+
+<div class="progress">
+
+<div
+class="progress-bar"
+id="rewardProgress">
+</div>
+
+</div>
+
+
+<p
+style="margin-top:10px"
+id="rewardNext">
+
+0 / 250 points
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+🏅 Achievement Badges
+</h2>
+
+<br>
+
+
+<div class="reward-grid">
+
+
+<div
+class="badge"
+id="badge1">
+
+<div class="badge-icon">
+🍚
+</div>
+
+<h3>
+Food Saver
+</h3>
+
+<p>
+250 NourivaPoints
+</p>
+
+<div class="lock">
+🔒 Keep contributing
+</div>
+
+</div>
+
+
+<div
+class="badge"
+id="badge2">
+
+<div class="badge-icon">
+🤝
+</div>
+
+<h3>
+Anna Hero
+</h3>
+
+<p>
+500 NourivaPoints
+</p>
+
+<div class="lock">
+🔒 Keep contributing
+</div>
+
+</div>
+
+
+<div
+class="badge"
+id="badge3">
+
+<div class="badge-icon">
+🌱
+</div>
+
+<h3>
+Green Champion
+</h3>
+
+<p>
+1,000 NourivaPoints
+</p>
+
+<div class="lock">
+🔒 Keep contributing
+</div>
+
+</div>
+
+
+<div
+class="badge"
+id="badge4">
+
+<div class="badge-icon">
+🏆
+</div>
+
+<h3>
+Community Champion
+</h3>
+
+<p>
+2,500 NourivaPoints
+</p>
+
+<div class="lock">
+🔒 Keep contributing
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+🎯 Weekly Rescue Challenge
+</h2>
+
+<br>
+
+<div class="challenge">
+
+<h3>
+Rescue 20 kg of surplus food
+</h3>
+
+<p style="margin-top:7px">
+
+Complete the challenge and earn
+<strong>+100 NourivaPoints</strong>.
+
+</p>
+
+
+<div class="challenge-progress">
+
+<div
+class="challenge-bar"
+id="challengeBar">
+
+</div>
+
+</div>
+
+
+<p id="challengeText">
+0 / 20 kg rescued
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+🔥 Rescue Streak
+</h2>
+
+<br>
+
+<p>
+Current streak:
+<strong id="streakValue">
+0 days
+</strong>
+</p>
+
+<br>
+
+<p style="color:var(--muted)">
+
+Keep contributing regularly to build your Nouriva
+rescue streak.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+⭐ Ways to Earn NourivaPoints
+</h2>
+
+<br>
+
+<p>
+🍱 Record food data
+<strong>+10</strong>
+</p>
+
+<br>
+
+<p>
+🛡️ Complete safety screening
+<strong>+10</strong>
+</p>
+
+<br>
+
+<p>
+♻️ Rescue each kg
+<strong>+5</strong>
+</p>
+
+<br>
+
+<p>
+🤝 Complete redistribution
+<strong>+20</strong>
+</p>
+
+<br>
+
+<p>
+🎯 Complete challenge
+<strong>+100</strong>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CARBON
+===================================================== -->
+
+<section id="carbon" class="page">
+
+<h1>Carbon Impact 🌍</h1>
+
+<p class="subtitle">
+Turn food waste numbers into environmental impact.
+</p>
+
+
+<div class="carbon">
+
+<h2>
+Food Waste → CO₂e Impact
+</h2>
+
+<p>
+Enter the amount of food wasted.
+</p>
+
+
+<input
+id="wasteKg"
+type="number"
+min="0"
+step=".1"
+placeholder="Example: 10 kg">
+
+
+<button
+class="primary"
+style="background:white;color:#08783f"
+onclick="calculateCarbon()">
+
+🌍 Calculate Impact
+
+</button>
+
+
+<div class="carbon-result">
+
+<p>
+Estimated CO₂e impact
+</p>
+
+<div class="big">
+
+<span id="carbonValue">
+0
+</span>
+
+kg CO₂e
+
+</div>
+
+<p>
+Prototype estimate using an illustrative factor.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+♻️ If Food Was Rescued
+</h2>
+
+<p>
+
+If suitable edible surplus is safely redistributed instead of
+being discarded, the associated emissions can be represented
+as potentially avoided.
+
+</p>
+
+<br>
+
+<h3>
+
+🌱 Potentially avoided:
+
+<span id="avoidedValue">
+0
+</span>
+
+kg CO₂e
+
+</h3>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Example
+</h2>
+
+<p>
+10 kg food waste × 2.5 kg CO₂e/kg
+</p>
+
+<br>
+
+<h3>
+= 25 kg CO₂e estimated impact
+</h3>
+
+<br>
+
+<p style="color:var(--muted)">
+
+The 2.5 factor is an illustrative prototype value.
+A production system should use appropriate food-specific
+life-cycle emission factors.
+
+</p>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     NOURIVA WINNING DEMO LAB
+===================================================== -->
+<section id="winning" class="page">
+  <div class="hero" style="min-height:240px;margin-bottom:24px">
+    <div class="hero-content">
+      <div class="eyebrow">✨ INTERACTIVE SIH DEMO</div>
+      <h1>Nouriva <span>Rescue Intelligence</span></h1>
+      <p>Predict surplus, review food safety, find a potential NGO match, and simulate measurable impact.</p>
+    </div>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card">
+      <h2>🤖 1. Tomorrow's Food Forecast</h2>
+      <p class="subtitle">A transparent demo estimate based on yesterday's data.</p>
+      <label>Yesterday prepared (kg)</label><input id="wfPrepared" type="number" min="0" value="150">
+      <label>Yesterday consumed (kg)</label><input id="wfConsumed" type="number" min="0" value="120">
+      <label>Expected people tomorrow</label><input id="wfPeople" type="number" min="1" value="500">
+      <button class="primary" onclick="nourivaForecast()">Generate Recommendation</button>
+      <div class="feature-result" id="wfResult">Enter kitchen data to generate a demo estimate.</div>
+    </article>
+    <article class="feature-card safety-feature">
+      <h2>🛡️ 2. Food Safety Review</h2>
+      <p class="subtitle">A checklist to support human review—not a guarantee of safety.</p>
+      <label>Time since preparation</label><select id="wsTime"><option value="ok">Within kitchen's approved holding limit</option><option value="risk">Holding time uncertain / exceeded</option></select>
+      <label>Storage condition</label><select id="wsStorage"><option value="ok">Stored according to food-safety procedure</option><option value="risk">Storage uncertain / not compliant</option></select>
+      <label>Packaging condition</label><select id="wsPack"><option value="ok">Clean and intact</option><option value="risk">Damaged or unclean</option></select>
+      <button class="primary" onclick="nourivaSafety()">Review Checklist</button>
+      <div class="feature-result" id="wsResult">Complete the checklist for a preliminary review.</div>
+    </article>
+    <article class="feature-card">
+      <h2>🤝 3. NGO Match Demo</h2>
+      <p class="subtitle">Example matching logic using the selected city and food type.</p>
+      <label>Kitchen city</label><select id="wmCity"><option>Hyderabad</option><option>Warangal</option><option>Vijayawada</option><option>Bengaluru</option></select>
+      <label>Food type</label><select id="wmFood"><option>Cooked meals</option><option>Packaged food</option><option>Fresh produce</option><option>Bakery items</option></select>
+      <label>Available quantity (kg)</label><input id="wmQty" type="number" min="1" value="24">
+      <button class="primary" onclick="nourivaMatch()">Find Demo Match</button>
+      <div class="feature-result" id="wmResult">Choose the details to see a sample match.</div>
+    </article>
+    <article class="feature-card">
+      <h2>🚚 4. Rescue Journey</h2>
+      <p class="subtitle">Click each step as your demo rescue progresses.</p>
+      <div class="rescue-steps" id="rescueSteps">
+        <button onclick="setRescueStep(0)">① Food recorded</button><button onclick="setRescueStep(1)">② Safety reviewed</button><button onclick="setRescueStep(2)">③ NGO connected</button><button onclick="setRescueStep(3)">④ Pickup scheduled</button><button onclick="setRescueStep(4)">⑤ Delivered</button>
+      </div>
+      <div class="feature-result" id="wrResult">Current status: Food recorded. Update each step during your demo.</div>
+    </article>
+    <article class="feature-card impact-feature">
+      <h2>🌍 5. Before vs After Impact Simulator</h2>
+      <p class="subtitle">Illustrative calculations—adjust values live for judges.</p>
+      <label>Current surplus (kg)</label><input id="wiSurplus" type="number" min="0" value="30" oninput="nourivaSimulate()">
+      <label>Target surplus reduction (%)</label><input id="wiReduction" type="number" min="0" max="100" value="20" oninput="nourivaSimulate()">
+      <label>Estimated meal portions per kg</label><input id="wiMeals" type="number" min="0" step="0.1" value="4" oninput="nourivaSimulate()">
+      <button class="primary" onclick="nourivaSimulate()">Simulate Impact</button>
+      <div class="sim-metrics"><div><strong id="wiSaved">6 kg</strong><span>Potential surplus reduction</span></div><div><strong id="wiPortions">24</strong><span>Potential meal portions</span></div><div><strong id="wiCarbon">15 kg</strong><span>Illustrative CO₂e estimate</span></div></div>
+      <small>*Uses a demo factor of 2.5 kg CO₂e per kg. Replace with validated, food-specific factors before real deployment.</small>
+    </article>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-logo">
+Nouriva 🌱
+</div>
+
+<p>
+From Surplus Food to Someone's Next Meal.
+</p>
+
+<p>
+Record • Predict • Protect • Rescue • Serve • Reward
+</p>
+
+</footer>
+
+
+<div id="toast">
+⭐ NourivaPoints earned!
+</div>
+
+
+<script>
+
+/* =====================================================
+   DATA
+===================================================== */
+
+let foodData={
+
+    kitchenName:"",
+    kitchenType:"",
+    pickupDetails:"",
+    city:"",
+    contactNo:"",
+    donorPortion:0,
+    foodType:"",
+    preparedAt:"",
+    storageDetails:"",
+    foodPhotoName:"",
+    foodPhotoData:"",
+    freshnessRisk:"",
+    expiryDate:"",
+    foodName:"",
+    expectedPeople:0,
+    prepared:0,
+    consumed:0,
+    remaining:0,
+    waste:0,
+    prepTime:"",
+    storage:"",
+    ngo:"",
+    requestSent:false,
+    safetyChecked:false
+
+};
+
+
+let rewardData={
+
+    points:0,
+    rescuedKg:0,
+    streak:0,
+
+    actions:{
+        record:false,
+        safety:false,
+        rescue:false,
+        redistribution:false
+    },
+
+    challengeRewardGiven:false
+
+};
+
+
+/* =====================================================
+   NOURIVA ENTRY / AUTH
+===================================================== */
+let authMode="register";
+
+function acceptNourivaChallenge(){
+    localStorage.setItem("nourivaChallengeAccepted","true");
+    document.getElementById("challengeStep").style.display="none";
+    document.getElementById("loginStep").style.display="block";
+}
+function toggleAuthMode(){
+    authMode=authMode==="register"?"login":"register";
+    document.getElementById("loginNameWrap").style.display=authMode==="register"?"block":"none";
+    document.getElementById("authTitle").innerText=authMode==="register"?"Create your Nouriva account":"Login to Nouriva";
+    document.getElementById("authSubtitle").innerText=authMode==="register"?"Save your kitchen details, rescue activity and impact on this device.":"Continue your food-rescue journey.";
+    document.getElementById("authSubmit").innerText=authMode==="register"?"Create Account & Enter Nouriva":"Login & Enter Nouriva";
+    document.getElementById("switchText").innerText=authMode==="register"?"Already have an account?":"New to Nouriva?";
+    document.getElementById("switchButton").innerText=authMode==="register"?"Login":"Create Account";
+    document.getElementById("authError").innerText="";
+}
+function handleAuth(event){
+    event.preventDefault();
+    const name=document.getElementById("loginName").value.trim();
+    const email=document.getElementById("loginEmail").value.trim();
+    const password=document.getElementById("loginPassword").value;
+    const saved=JSON.parse(localStorage.getItem("nourivaUser")||"null");
+    const error=document.getElementById("authError");
+    if(authMode==="register"){
+        if(!name||!email||password.length<4){error.innerText="Please enter name, email/mobile and a password of at least 4 characters.";return;}
+        localStorage.setItem("nourivaUser",JSON.stringify({name,email,password}));
+        localStorage.setItem("nourivaLoggedIn","true");
+        openNourivaApp(name);
+        return;
+    }
+    if(!saved||saved.email!==email||saved.password!==password){error.innerText="Account details not found or password is incorrect.";return;}
+    localStorage.setItem("nourivaLoggedIn","true");
+    openNourivaApp(saved.name);
+}
+function openNourivaApp(name){
+    document.getElementById("entryGate").classList.add("hidden");
+    document.getElementById("currentUserName").innerText=name||"User";
+    document.body.style.overflow="auto";
+}
+function logoutNouriva(){
+    localStorage.removeItem("nourivaLoggedIn");
+    document.getElementById("entryGate").classList.remove("hidden");
+    document.getElementById("challengeStep").style.display="none";
+    document.getElementById("loginStep").style.display="block";
+    document.body.style.overflow="hidden";
+    authMode="register";
+    toggleAuthMode(); // switches the UI to Login mode
+}
+
+/* =====================================================
+   RECORD WIZARD
+===================================================== */
+function goRecordStep(step){
+    [1,2,3].forEach(i=>{
+        document.getElementById("recordStep"+i).classList.toggle("active",i===step);
+        document.getElementById("wiz"+i).classList.toggle("active",i===step);
+    });
+    if(step===3){
+        document.getElementById("summaryKitchen").innerText=document.getElementById("kitchenName").value||"—";
+        document.getElementById("summaryFoodType").innerText=document.getElementById("foodType").value||"—";
+        document.getElementById("summaryRisk").innerText=document.getElementById("freshnessRisk").value||"—";
+    }
+}
+function continueToDonor(){
+    const ids=["kitchenName","kitchenType","pickupDetails","city","contactNo"];
+    if(ids.some(id=>!document.getElementById(id).value.trim())){alert("Please complete all kitchen details.");return;}
+    goRecordStep(2);
+}
+function continueToFoodQuantities(){
+    const ids=["donorPortion","foodType","preparedAt","storageDetails","freshnessRisk","expiryDate"];
+    if(ids.some(id=>!document.getElementById(id).value)){alert("Please complete the donor and food details.");return;}
+    calculateFreshness();
+    goRecordStep(3);
+}
+function previewDonorPhoto(event){
+    const file=event.target.files[0];
+    if(!file)return;
+    const reader=new FileReader();
+    reader.onload=function(){
+        document.getElementById("photoPreviewImg").src=reader.result;
+        document.getElementById("photoPreview").style.display="block";
+        foodData.foodPhotoName=file.name;
+        foodData.foodPhotoData=reader.result;
+    };
+    reader.readAsDataURL(file);
+}
+function calculateFreshness(){
+    const expiry=document.getElementById("expiryDate").value;
+    if(!expiry)return;
+    const today=new Date();today.setHours(0,0,0,0);
+    const end=new Date(expiry+"T00:00:00");
+    const days=Math.ceil((end-today)/86400000);
+    const box=document.getElementById("freshnessStatus");
+    if(days<0){box.innerText="⚠️ Expiry date has passed. Do not proceed without responsible food-safety verification.";box.style.background="#fff0f0";box.style.color="#b42318";}
+    else if(days===0){box.innerText="⚠️ Use today only if responsible safety checks allow it.";box.style.background="#fff7e9";box.style.color="#9a6700";}
+    else{box.innerText="✅ Estimated remaining time: "+days+" day(s) until the entered expiry date.";box.style.background="#f0f9f2";box.style.color="var(--green)";}
+}
+
+/* =====================================================
+   LOAD
+===================================================== */
+
+window.onload=function(){
+
+    const food=
+    localStorage.getItem("nourivaFoodData");
+
+    const rewards=
+    localStorage.getItem("nourivaRewards");
+
+
+    if(food){
+
+        foodData=
+        JSON.parse(food);
+
+    }
+
+
+    if(rewards){
+
+        rewardData=
+        JSON.parse(rewards);
+
+    }
+
+
+    const loggedIn=localStorage.getItem("nourivaLoggedIn")==="true";
+    const challengeAccepted=localStorage.getItem("nourivaChallengeAccepted")==="true";
+    const user=JSON.parse(localStorage.getItem("nourivaUser")||"null");
+
+    if(loggedIn && user){
+        openNourivaApp(user.name);
+    }else{
+        document.getElementById("entryGate").classList.remove("hidden");
+        document.body.style.overflow="hidden";
+        if(challengeAccepted){
+            document.getElementById("challengeStep").style.display="none";
+            document.getElementById("loginStep").style.display="block";
+            authMode="login";
+            toggleAuthMode();
+        }
+    }
+
+    updateDashboard();
+    updateOtherPages();
+    updateImpact();
+    updateRewards();
+    updateEntryChallenge();
+
+};
+
+
+function updateEntryChallenge(){
+    const rescued=Number(rewardData.rescuedKg||0);
+    const pct=Math.min(100,(rescued/20)*100);
+    const bar=document.getElementById("entryChallengeBar");
+    const text=document.getElementById("entryChallengeText");
+    if(bar)bar.style.width=pct+"%";
+    if(text)text.innerText=Math.min(rescued,20).toFixed(1)+" / 20 kg rescued";
+}
+
+/* =====================================================
+   STORAGE
+===================================================== */
+
+function saveData(){
+
+    localStorage.setItem(
+        "nourivaFoodData",
+        JSON.stringify(foodData)
+    );
+
+}
+
+
+function saveRewards(){
+
+    localStorage.setItem(
+        "nourivaRewards",
+        JSON.stringify(rewardData)
+    );
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+function openPage(page){
+
+    document.querySelectorAll(".page")
+    .forEach(p=>{
+        p.classList.remove("active");
+    });
+
+
+    document.getElementById(page)
+    .classList.add("active");
+
+
+    updateOtherPages();
+    updateImpact();
+    updateRewards();
+
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+function toast(message){
+
+    const box=
+    document.getElementById("toast");
+
+    box.innerText=message;
+
+    box.classList.add("show");
+
+    setTimeout(()=>{
+        box.classList.remove("show");
+    },2500);
+
+}
+
+
+function showMessage(message){
+
+    document.getElementById("dashboardMessage")
+    .innerHTML=`
+
+    <div class="result">
+
+        <strong>🌱 Nouriva</strong>
+
+        <p style="margin-top:8px">
+        ${message}
+        </p>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   POINTS
+===================================================== */
+
+function addPoints(points){
+
+    rewardData.points += points;
+
+    saveRewards();
+
+    updateRewards();
+    updateDashboard();
+
+    toast("⭐ +" + points + " NourivaPoints earned!");
+
+}
+
+
+/* =====================================================
+   RECORD FOOD
+===================================================== */
+
+function saveFoodData(){
+    const name=document.getElementById("foodName").value.trim();
+    const expected=parseFloat(document.getElementById("expectedPeople").value);
+    const prepared=parseFloat(document.getElementById("prepared").value);
+    const consumed=parseFloat(document.getElementById("consumed").value);
+    const remaining=parseFloat(document.getElementById("remaining").value);
+    const prepTime=document.getElementById("prepTime").value;
+    const storage=document.getElementById("storage").value;
+    const donorPortion=parseFloat(document.getElementById("donorPortion").value);
+
+    if(!name||isNaN(expected)||isNaN(prepared)||isNaN(consumed)||isNaN(remaining)||!prepTime||!storage||isNaN(donorPortion)){
+        alert("Please enter all food quantity details.");return;
+    }
+    if(consumed>prepared){alert("Consumed quantity cannot exceed prepared quantity.");return;}
+    if(remaining>prepared){alert("Remaining quantity cannot exceed prepared quantity.");return;}
+    if(donorPortion>remaining){alert("Donor portion cannot exceed the recorded surplus.");return;}
+
+    let waste=prepared-consumed-remaining;if(waste<0)waste=0;
+
+    foodData.kitchenName=document.getElementById("kitchenName").value.trim();
+    foodData.kitchenType=document.getElementById("kitchenType").value;
+    foodData.pickupDetails=document.getElementById("pickupDetails").value.trim();
+    foodData.city=document.getElementById("city").value;
+    foodData.contactNo=document.getElementById("contactNo").value.trim();
+    foodData.donorPortion=donorPortion;
+    foodData.foodType=document.getElementById("foodType").value;
+    foodData.preparedAt=document.getElementById("preparedAt").value;
+    foodData.storageDetails=document.getElementById("storageDetails").value.trim();
+    foodData.freshnessRisk=document.getElementById("freshnessRisk").value;
+    foodData.expiryDate=document.getElementById("expiryDate").value;
+    foodData.foodName=name;foodData.expectedPeople=expected;foodData.prepared=prepared;
+    foodData.consumed=consumed;foodData.remaining=remaining;foodData.waste=waste;
+    foodData.prepTime=prepTime;foodData.storage=storage;
+
+    saveData();
+
+    if(!rewardData.actions.record){
+        addPoints(10);rewardData.actions.record=true;saveRewards();
+    }
+
+    updateDashboard();updateOtherPages();updateImpact();updateEntryChallenge();
+
+    document.getElementById("recordResult").innerHTML=`
+    <div class="result">
+      <h2>✅ Food Data Saved</h2><br>
+      <p>Kitchen: <strong>${foodData.kitchenName}</strong></p>
+      <p>Food: <strong>${name}</strong></p>
+      <p>Food Type: <strong>${foodData.foodType}</strong></p>
+      <p>Prepared: <strong>${prepared} kg</strong></p>
+      <p>Consumed: <strong>${consumed} kg</strong></p>
+      <p>Surplus: <strong>${remaining} kg</strong></p>
+      <p>Donor Portion: <strong>${donorPortion} kg</strong></p>
+      <p>Waste: <strong>${waste.toFixed(1)} kg</strong></p>
+      <p>Freshness Risk: <strong>${foodData.freshnessRisk}</strong></p>
+      <p>Photo: <strong>${foodData.foodPhotoName||"Not uploaded"}</strong></p>
+      <br><p style="color:#08783f;font-weight:bold">⭐ +10 NourivaPoints earned!</p><br>
+      ${remaining>0?`<button class="primary" onclick="openPage('safety')">🛡️ Check Food Safety</button>`:`<p>No surplus food recorded.</p>`}
+    </div>`;
+}
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+function updateDashboard(){
+
+    document.getElementById("dashPrepared")
+    .innerText=
+    Number(foodData.prepared||0)
+    .toFixed(1)+" kg";
+
+
+    document.getElementById("dashSurplus")
+    .innerText=
+    Number(foodData.remaining||0)
+    .toFixed(1)+" kg";
+
+
+    document.getElementById("dashPoints")
+    .innerText=
+    rewardData.points;
+
+
+    const rescued=
+    Number(rewardData.rescuedKg||0);
+
+
+    const meals=
+    Math.round(rescued*4);
+
+
+    const carbon=
+    rescued*2.5;
+
+
+    document.getElementById("homeMeals")
+    .innerText=meals;
+
+
+    document.getElementById("homeMeals2")
+    .innerText=meals;
+
+
+    document.getElementById("homeRescued")
+    .innerText=
+    rescued.toFixed(1)+" kg";
+
+
+    document.getElementById("homeCO2")
+    .innerText=
+    carbon.toFixed(1)+" kg";
+
+
+    document.getElementById("homeBadge")
+    .innerText=
+    getBadge();
+
+    if(document.getElementById("homeKitchen")){
+        document.getElementById("homeKitchen").innerText=foodData.kitchenName||"Not added";
+        document.getElementById("homeKitchenType").innerText=foodData.kitchenType||"Not added";
+        document.getElementById("homeCity").innerText=foodData.city||"Not added";
+    }
+
+}
+
+
+/* =====================================================
+   AI
+===================================================== */
+
+function runPrediction(){
+
+    const people=
+    parseFloat(
+        document.getElementById("tomorrowPeople").value
+    );
+
+
+    const perPerson=
+    parseFloat(
+        document.getElementById("foodPerPerson").value
+    );
+
+
+    if(
+        isNaN(people)||
+        isNaN(perPerson)||
+        people<=0||
+        perPerson<=0
+    ){
+
+        alert("Please enter valid numbers.");
+
+        return;
+
+    }
+
+
+    const basic=
+    people*perPerson;
+
+
+    const recommended=
+    basic*1.05;
+
+
+    document.getElementById("predictionResult")
+    .innerHTML=`
+
+    <div class="result">
+
+        <h2>🤖 Nouriva Recommendation</h2>
+
+        <br>
+
+        <p>
+        Expected people:
+        <strong>${people}</strong>
+        </p>
+
+        <p>
+        Basic requirement:
+        <strong>${basic.toFixed(1)} kg</strong>
+        </p>
+
+        <p>
+        Recommended preparation:
+        <strong>${recommended.toFixed(1)} kg</strong>
+        </p>
+
+        <br>
+
+        <p>
+        A 5% prototype buffer is added to reduce shortage risk.
+        </p>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   OTHER PAGES
+===================================================== */
+
+function updateOtherPages(){
+
+    if(!foodData.foodName)
+        return;
+
+
+    document.getElementById("previousData")
+    .innerHTML=`
+
+    <div class="result">
+
+        <p>
+        Food:
+        <strong>${foodData.foodName}</strong>
+        </p>
+
+        <p>
+        Prepared:
+        <strong>${Number(foodData.prepared).toFixed(1)} kg</strong>
+        </p>
+
+        <p>
+        Consumed:
+        <strong>${Number(foodData.consumed).toFixed(1)} kg</strong>
+        </p>
+
+        <p>
+        Surplus:
+        <strong>${Number(foodData.remaining).toFixed(1)} kg</strong>
+        </p>
+
+        <p>
+        Waste:
+        <strong>${Number(foodData.waste).toFixed(1)} kg</strong>
+        </p>
+
+    </div>
+
+    `;
+
+
+    document.getElementById("safetyFood")
+    .innerText=
+    foodData.foodName;
+
+
+    document.getElementById("safetyQuantity")
+    .innerText=
+    "Surplus: "+
+    Number(foodData.remaining).toFixed(1)+
+    " kg";
+
+
+    document.getElementById("redistributeFood")
+    .innerText=
+    foodData.foodName;
+
+
+    document.getElementById("redistributeQuantity")
+    .innerText=
+    "Quantity: "+
+    Number(foodData.remaining).toFixed(1)+
+    " kg";
+
+
+    document.getElementById("trackFood")
+    .innerText=
+    foodData.foodName;
+
+
+    document.getElementById("trackNgo")
+    .innerText=
+    "NGO: "+
+    (foodData.ngo||"Not selected");
+
+
+    updateTrackingUI();
+
+}
+
+
+/* =====================================================
+   SAFETY
+===================================================== */
+
+function checkSafety(){
+
+    if(!foodData.foodName){
+
+        alert("Record food details first.");
+
+        return;
+
+    }
+
+
+    const checks=[
+        "safe1",
+        "safe2",
+        "safe3",
+        "safe4"
+    ];
+
+
+    const passed=
+    checks.every(
+        id=>document.getElementById(id).checked
+    );
+
+
+    if(!passed){
+
+        document.getElementById("safetyResult")
+        .innerHTML=`
+
+        <div class="result danger">
+
+            <h3>⚠️ Safety Check Incomplete</h3>
+
+            <p style="margin-top:8px">
+
+            Please complete all screening checks.
+
+            </p>
+
+        </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    foodData.safetyChecked=true;
+
+    saveData();
+
+
+    if(!rewardData.actions.safety){
+
+        addPoints(10);
+
+        rewardData.actions.safety=true;
+
+        saveRewards();
+
+    }
+
+
+    document.getElementById("safetyResult")
+    .innerHTML=`
+
+    <div class="result">
+
+        <h3>✅ Safety Screening Passed</h3>
+
+        <p style="margin-top:8px">
+
+        All prototype screening checks are complete.
+
+        </p>
+
+        <br>
+
+        <button
+        class="primary"
+        onclick="openPage('redistribute')">
+
+        🤝 Find Redistribution Partner
+
+        </button>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   NGO
+===================================================== */
+
+function sendRequest(ngo){
+
+    if(!foodData.foodName){
+
+        alert("Record food details first.");
+
+        return;
+
+    }
+
+
+    if(!foodData.safetyChecked){
+
+        alert("Complete the safety check first.");
+
+        return;
+
+    }
+
+
+    if(foodData.remaining<=0){
+
+        alert("No surplus food available.");
+
+        return;
+
+    }
+
+
+    foodData.ngo=ngo;
+
+    foodData.requestSent=true;
+
+    saveData();
+
+
+    const kg=
+    Number(foodData.donorPortion||foodData.remaining);
+
+
+    rewardData.rescuedKg=kg;
+
+
+    if(!rewardData.actions.rescue){
+
+        addPoints(
+            Math.round(kg*5)
+        );
+
+        rewardData.actions.rescue=true;
+
+    }
+
+
+    if(!rewardData.actions.redistribution){
+
+        addPoints(20);
+
+        rewardData.actions.redistribution=true;
+
+    }
+
+
+    saveRewards();
+
+
+    updateDashboard();
+    updateImpact();
+    updateRewards();
+    updateEntryChallenge();
+
+
+    document.getElementById("ngoResult")
+    .innerHTML=`
+
+    <div class="result">
+
+        <h3>🎉 Rescue Request Created!</h3>
+
+        <p style="margin-top:8px">
+
+        <strong>${kg} kg</strong>
+        of <strong>${foodData.foodName}</strong>
+        is being connected with
+        <strong>${ngo}</strong>.
+
+        </p>
+
+        <br>
+
+        <button
+        class="primary"
+        onclick="openPage('tracking')">
+
+        🚚 Track Rescue
+
+        </button>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   TRACKING
+===================================================== */
+
+function updateTracking(){
+
+    if(!foodData.requestSent){
+
+        alert("Create a redistribution request first.");
+
+        return;
+
+    }
+
+
+    const steps=[
+        "stepSafety",
+        "stepRequest",
+        "stepAccepted",
+        "stepPickup",
+        "stepDelivered"
+    ];
+
+
+    let current=
+    Number(
+        localStorage.getItem(
+            "nourivaTrackingStep"
+        )||0
+    );
+
+
+    if(current>=steps.length){
+
+        alert("🎉 Rescue journey completed!");
+
+        return;
+
+    }
+
+
+    const step=
+    document.getElementById(
+        steps[current]
+    );
+
+
+    step.classList.add("done");
+
+
+    const strong=
+    step.querySelector("strong");
+
+
+    const text=
+    step.querySelector("p");
+
+
+    const data=[
+
+        ["✅ Safety Checked",
+        "Food safety screening completed."],
+
+        ["✅ NGO Request",
+        "Redistribution request sent."],
+
+        ["✅ NGO Accepted",
+        "NGO accepted the food request."],
+
+        ["✅ Pickup",
+        "Food is ready for collection."],
+
+        ["✅ Delivered",
+        "Food has been delivered successfully."]
+
+    ];
+
+
+    strong.innerText=data[current][0];
+
+    text.innerText=data[current][1];
+
+
+    localStorage.setItem(
+        "nourivaTrackingStep",
+        current+1
+    );
+
+
+    if(current===4){
+
+        rewardData.streak++;
+
+        saveRewards();
+
+        updateRewards();
+
+        toast("🏆 Rescue journey completed!");
+
+    }
+
+}
+
+
+/* =====================================================
+   TRACKING UI
+===================================================== */
+
+function updateTrackingUI(){
+
+    if(!foodData.requestSent)
+        return;
+
+
+    const current=
+    Number(
+        localStorage.getItem(
+            "nourivaTrackingStep"
+        )||0
+    );
+
+
+    const steps=[
+        "stepSafety",
+        "stepRequest",
+        "stepAccepted",
+        "stepPickup",
+        "stepDelivered"
+    ];
+
+
+    for(
+        let i=0;
+        i<current;
+        i++
+    ){
+
+        document.getElementById(
+            steps[i]
+        ).classList.add("done");
+
+    }
+
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+function getBadge(){
+
+    const points=
+    Number(rewardData.points);
+
+
+    if(points>=2500)
+        return "Community Champion 🏆";
+
+
+    if(points>=1000)
+        return "Green Champion 🌱";
+
+
+    if(points>=500)
+        return "Anna Hero 🤝";
+
+
+    return "Food Saver 🍚";
+
+}
+
+
+/* =====================================================
+   REWARDS
+===================================================== */
+
+function updateRewards(){
+
+    const points=
+    Number(rewardData.points);
+
+
+    document.getElementById("rewardPoints")
+    .innerText=points;
+
+
+    document.getElementById("rewardLevel")
+    .innerText=getBadge();
+
+
+    let next=250;
+
+
+    if(points>=2500)
+        next=2500;
+
+    else if(points>=1000)
+        next=2500;
+
+    else if(points>=500)
+        next=1000;
+
+
+    const progress=
+    Math.min(
+        100,
+        (points/next)*100
+    );
+
+
+    document.getElementById(
+        "rewardProgress"
+    ).style.width=
+    progress+"%";
+
+
+    document.getElementById(
+        "rewardNext"
+    ).innerText=
+    points+" / "+next+" points";
+
+
+    document.getElementById(
+        "streakValue"
+    ).innerText=
+    rewardData.streak+" days";
+
+
+    const rescued=
+    Number(rewardData.rescuedKg||0);
+
+
+    const challenge=
+    Math.min(
+        100,
+        (rescued/20)*100
+    );
+
+
+    document.getElementById(
+        "challengeBar"
+    ).style.width=
+    challenge+"%";
+
+
+    document.getElementById(
+        "challengeText"
+    ).innerText=
+    Math.min(rescued,20)
+    .toFixed(1)
+    +" / 20 kg rescued";
+
+
+    if(
+        rescued>=20 &&
+        !rewardData.challengeRewardGiven
+    ){
+
+        rewardData.points+=100;
+
+        rewardData.challengeRewardGiven=true;
+
+        saveRewards();
+
+        toast(
+            "🎯 Challenge completed! +100 NourivaPoints!"
+        );
+
+    }
+
+
+    document.getElementById("badge1")
+    .classList.toggle(
+        "unlocked",
+        points>=250
+    );
+
+
+    document.getElementById("badge2")
+    .classList.toggle(
+        "unlocked",
+        points>=500
+    );
+
+
+    document.getElementById("badge3")
+    .classList.toggle(
+        "unlocked",
+        points>=1000
+    );
+
+
+    document.getElementById("badge4")
+    .classList.toggle(
+        "unlocked",
+        points>=2500
+    );
+
+}
+
+
+/* =====================================================
+   IMPACT
+===================================================== */
+
+function updateImpact(){
+
+    const rescued=
+    Number(rewardData.rescuedKg||0);
+
+
+    const waste=
+    Number(foodData.waste||0);
+
+
+    const meals=
+    Math.round(rescued*4);
+
+
+    const carbon=
+    rescued*2.5;
+
+
+    document.getElementById("impactFood")
+    .innerText=
+    rescued.toFixed(1)+" kg";
+
+
+    document.getElementById("impactMeals")
+    .innerText=
+    meals;
+
+
+    document.getElementById("impactWaste")
+    .innerText=
+    waste.toFixed(1)+" kg";
+
+
+    document.getElementById("impactCarbon")
+    .innerText=
+    carbon.toFixed(1)+" kg";
+
+    const donorPortion=Number(foodData.donorPortion||rescued||0);
+    const people=Math.round(rescued*4);
+    document.getElementById("impactPortions").innerText=Math.round(donorPortion);
+    document.getElementById("impactPeople").innerText=people;
+    document.getElementById("impactNGOs").innerText=foodData.requestSent?1:0;
+    document.getElementById("impactCarbonTop").innerText=carbon.toFixed(1)+" kg";
+    document.getElementById("impactKitchen").innerText=foodData.kitchenName||"Not added";
+    document.getElementById("impactFoodType").innerText=foodData.foodType||"Not added";
+    document.getElementById("impactRisk").innerText=foodData.freshnessRisk||"Not checked";
+
+
+    if(rescued>0){
+
+        document.getElementById("impactStory")
+        .innerHTML=`
+
+        Through Nouriva, you have helped rescue
+
+        <strong>${rescued.toFixed(1)} kg</strong>
+
+        of surplus food.
+
+        <br><br>
+
+        That represents approximately
+
+        <strong>${meals}</strong>
+
+        estimated meals supported and
+
+        <strong>${carbon.toFixed(1)} kg CO₂e</strong>
+
+        of estimated associated emissions
+        potentially avoided.
+
+        <br><br>
+
+        <strong>
+        🌱 Small actions. Real impact.
+        </strong>
+
+        `;
+
+    }
+
+}
+
+
+/* =====================================================
+   CARBON
+===================================================== */
+
+function calculateCarbon(){
+
+    const waste=
+    parseFloat(
+        document.getElementById("wasteKg").value
+    );
+
+
+    if(
+        isNaN(waste)||
+        waste<0
+    ){
+
+        alert("Enter a valid waste quantity.");
+
+        return;
+
+    }
+
+
+    const factor=2.5;
+
+    const impact=
+    waste*factor;
+
+
+    document.getElementById(
+        "carbonValue"
+    ).innerText=
+    impact.toFixed(1);
+
+
+    document.getElementById(
+        "avoidedValue"
+    ).innerText=
+    impact.toFixed(1);
+
+}
+
+
+
+// Nouriva interactive demo features (prototype calculations only)
+function nourivaForecast(){
+ const p=Math.max(0,Number(document.getElementById('wfPrepared').value)||0);
+ const c=Math.max(0,Number(document.getElementById('wfConsumed').value)||0);
+ const people=Math.max(1,Number(document.getElementById('wfPeople').value)||1);
+ const surplus=Math.max(0,p-c);
+ const perPerson=c/people;
+ const recommended=Math.max(0,Math.round(perPerson*people*1.05));
+ const reduction=Math.max(0,p-recommended);
+ document.getElementById('wfResult').innerHTML=`<strong>Demo recommendation: ${recommended.toFixed(1)} kg</strong><br>Recorded surplus: ${surplus.toFixed(1)} kg<br>Potential preparation reduction vs yesterday: ${reduction.toFixed(1)} kg<br><small>This simple baseline uses consumption plus a 5% buffer. It is not a trained AI model.</small>`;
+}
+function nourivaSafety(){
+ const checks=[['Holding time',document.getElementById('wsTime').value],['Storage',document.getElementById('wsStorage').value],['Packaging',document.getElementById('wsPack').value]];
+ const risks=checks.filter(x=>x[1]==='risk');
+ const result=document.getElementById('wsResult');
+ if(risks.length){result.innerHTML=`<strong>⚠️ HOLD FOR HUMAN REVIEW</strong><br>${risks.map(x=>'• '+x[0]+' needs review').join('<br>')}<br><small>Do not redistribute until a qualified person confirms compliance with applicable food-safety procedures.</small>`;}
+ else{result.innerHTML='<strong>🟦 Checklist complete — pending authorized verification</strong><br>All selected checklist items are marked compliant. This form cannot independently confirm that food is safe.';}
+}
+function nourivaMatch(){
+ const city=document.getElementById('wmCity').value;
+ const food=document.getElementById('wmFood').value;
+ const qty=Math.max(0,Number(document.getElementById('wmQty').value)||0);
+ const sample={Hyderabad:'Community Food Support',Warangal:'Helping Hands Community Kitchen',Vijayawada:'Share A Meal Network',Bengaluru:'Neighbourhood Food Rescue'};
+ document.getElementById('wmResult').innerHTML=`<strong>Sample match: ${sample[city]}</strong><br>📍 ${city}<br>🍱 ${food}<br>📦 ${qty.toFixed(1)} kg available<br><strong>Demo compatibility: ${(Math.min(98,78+qty/10)).toFixed(0)}%</strong><br><small>Illustrative sample data only. Confirm partner identity, capacity, location, and pickup availability before real use.</small>`;
+}
+const rescueLabels=['Food recorded','Safety reviewed','NGO connected','Pickup scheduled','Delivered'];
+function setRescueStep(step){
+ document.querySelectorAll('#rescueSteps button').forEach((b,i)=>b.classList.toggle('done',i<=step));
+ document.getElementById('wrResult').innerHTML=`<strong>Status: ${rescueLabels[step]}</strong><br>${step===4?'Rescue marked delivered in this demo. Record proof of delivery in a production system.':'Next step: '+rescueLabels[Math.min(step+1,4)]+'.'}`;
+}
+function nourivaSimulate(){
+ const surplus=Math.max(0,Number(document.getElementById('wiSurplus').value)||0);
+ const reduction=Math.min(100,Math.max(0,Number(document.getElementById('wiReduction').value)||0));
+ const meals=Math.max(0,Number(document.getElementById('wiMeals').value)||0);
+ const saved=surplus*reduction/100;
+ document.getElementById('wiSaved').textContent=saved.toFixed(1)+' kg';
+ document.getElementById('wiPortions').textContent=Math.round(saved*meals).toLocaleString();
+ document.getElementById('wiCarbon').textContent=(saved*2.5).toFixed(1)+' kg';
+}
+
+</script>
+
+
+<script>
+/* =====================================================
+   NOURIVA BACKEND BRIDGE
+   Connects the existing SIH frontend to the Express API.
+===================================================== */
+(function(){
+  const API = '/api';
+  let backendToken = sessionStorage.getItem('nourivaToken') || '';
+  const originalHandleAuth = window.handleAuth;
+  const originalLogout = window.logoutNouriva;
+  const originalSaveFoodData = window.saveFoodData;
+  const originalCheckSafety = window.checkSafety;
+  const originalSendRequest = window.sendRequest;
+  const originalUpdateTracking = window.updateTracking;
+
+  async function api(path, options={}){
+    const headers = {'Content-Type':'application/json', ...(options.headers||{})};
+    if(backendToken) headers.Authorization='Bearer '+backendToken;
+    const r=await fetch(API+path,{...options,headers});
+    const data=await r.json().catch(()=>({}));
+    if(!r.ok) throw new Error(data.error||'Backend request failed');
+    return data;
+  }
+  function setToken(t){backendToken=t||''; if(t)sessionStorage.setItem('nourivaToken',t); else sessionStorage.removeItem('nourivaToken');}
+  function applyState(s){
+    if(!s)return;
+    if(s.food) foodData=s.food;
+    if(s.rewards) rewardData=s.rewards;
+    if(s.trackingStep!==undefined) localStorage.setItem('nourivaTrackingStep',String(s.trackingStep));
+    if(s.user) document.getElementById('currentUserName').innerText=s.user.name||'User';
+    updateDashboard(); updateOtherPages(); updateImpact(); updateRewards(); updateEntryChallenge();
+  }
+  async function sync(){
+    if(!backendToken)return;
+    try{ applyState(await api('/state')); }
+    catch(e){ console.warn('Nouriva sync:',e.message); }
+  }
+
+  window.handleAuth = async function(event){
+    event.preventDefault();
+    const name=document.getElementById('loginName').value.trim();
+    const email=document.getElementById('loginEmail').value.trim();
+    const password=document.getElementById('loginPassword').value;
+    const error=document.getElementById('authError');
+    try{
+      const data = authMode==='register'
+        ? await api('/auth/register',{method:'POST',body:JSON.stringify({name,email,password})})
+        : await api('/auth/login',{method:'POST',body:JSON.stringify({email,password})});
+      setToken(data.token);
+      localStorage.setItem('nourivaLoggedIn','true');
+      localStorage.setItem('nourivaUser',JSON.stringify(data.user));
+      openNourivaApp(data.user.name);
+      await sync();
+    }catch(e){ error.innerText=e.message; }
+  };
+
+  window.logoutNouriva = function(){
+    setToken('');
+    localStorage.removeItem('nourivaLoggedIn');
+    if(typeof originalLogout==='function') originalLogout();
+  };
+
+  window.saveFoodData = async function(){
+    if(typeof originalSaveFoodData==='function') originalSaveFoodData();
+    if(!foodData.foodName) return;
+    try{
+      const data=await api('/food',{method:'POST',body:JSON.stringify(foodData)});
+      if(data.rewards) rewardData=data.rewards;
+      await sync();
+    }catch(e){showMessage('Backend error: '+e.message);}
+  };
+
+  window.checkSafety = async function(){
+    if(typeof originalCheckSafety==='function') originalCheckSafety();
+    if(!foodData.foodName)return;
+    const passed=['safe1','safe2','safe3','safe4'].every(id=>document.getElementById(id)?.checked);
+    if(!passed)return;
+    try{const data=await api('/safety',{method:'POST',body:JSON.stringify({passed:true})}); if(data.rewards)rewardData=data.rewards; await sync();}
+    catch(e){showMessage('Backend error: '+e.message);}
+  };
+
+  window.sendRequest = async function(ngo){
+    if(typeof originalSendRequest==='function') originalSendRequest(ngo);
+    if(!foodData.foodName || !foodData.safetyChecked || Number(foodData.remaining)<=0)return;
+    try{const data=await api('/requests',{method:'POST',body:JSON.stringify({ngo})}); if(data.rewards)rewardData=data.rewards; await sync();}
+    catch(e){showMessage('Backend error: '+e.message);}
+  };
+
+  window.updateTracking = async function(){
+    try{
+      const data=await api('/tracking/advance',{method:'POST',body:JSON.stringify({})});
+      localStorage.setItem('nourivaTrackingStep',String(data.trackingStep));
+      if(data.rewards)rewardData=data.rewards;
+      updateOtherPages();updateDashboard();updateImpact();updateRewards();
+      toast(data.trackingStep>=5?'🏆 Rescue journey completed!':'🚚 Tracking updated');
+    }catch(e){showMessage(e.message);}
+  };
+
+  window.runPrediction = async function(){
+    const people=parseFloat(document.getElementById('tomorrowPeople').value);
+    const perPerson=parseFloat(document.getElementById('foodPerPerson').value);
+    if(!(people>0)||!(perPerson>0)){alert('Please enter valid numbers.');return;}
+    try{
+      const d=await api('/prediction',{method:'POST',body:JSON.stringify({people,perPerson})});
+      document.getElementById('predictionResult').innerHTML=`<div class="result"><h2>🤖 Nouriva Recommendation</h2><br><p>Expected people: <strong>${d.people}</strong></p><p>Basic requirement: <strong>${d.basic.toFixed(1)} kg</strong></p><p>Recommended preparation: <strong>${d.recommended.toFixed(1)} kg</strong></p><br><p>A ${d.buffer}% prototype buffer is added to reduce shortage risk.</p></div>`;
+    }catch(e){showMessage('Backend error: '+e.message);}
+  };
+
+  window.addEventListener('load', async function(){
+    if(backendToken){ await sync(); }
+  });
+})();
+</script>
+
+</body>
+</html>
